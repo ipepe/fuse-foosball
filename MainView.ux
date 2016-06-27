@@ -1,0 +1,16 @@
+<App>
+  <DockPanel>
+    <JavaScript File="AuthKeys.js" ux:Global="Auth" />
+    <JavaScript File="MainController.js"/>
+
+    <StatusBarBackground Dock="Top" />
+    <Panel>
+      <DockPanel Clicked="{loginClicked}" Height="60" Padding="5,5,15,5" Alignment="Center">
+        <Rectangle Layer="Background" CornerRadius="4" Fill="#3B5998" />
+        <Image File="Assets/Google.png" Dock="Left" Margin="8,8,10,8"/>
+        <Text Value="Login with Google" Alignment="Center" TextColor="#fff" FontSize="20"/>
+      </DockPanel>
+    </Panel>
+    <BottomBarBackground Dock="Bottom" />
+  </DockPanel>
+</App>

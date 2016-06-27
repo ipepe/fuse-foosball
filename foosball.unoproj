@@ -1,0 +1,14 @@
+{
+  "Mobile": {
+    "UriScheme": "foosball"
+  },
+  "RootNamespace": "",
+  "Packages": [
+    "Fuse",
+    "FuseJS",
+    "Fuse.Launcher"
+  ],
+  "Includes": [
+    "*"
+  ]
+}
