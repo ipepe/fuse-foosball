@@ -1,6 +1,5 @@
 <App>
   <DockPanel>
-    <JavaScript File="AuthKeys.js" ux:Global="Auth" />
     <JavaScript File="MainController.js"/>
 
     <StatusBarBackground Dock="Top" />

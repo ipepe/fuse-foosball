@@ -1,12 +1,21 @@
 {
+  "Version": "1.0.0",
+  "VersionCount": 1,
+  "Title": "Foosball",
+  "Copyright": "Copyright Patryk Ptasiński(C) 2016",
+  "Publisher": "Patryk Ptasiński",
   "Mobile": {
-    "UriScheme": "foosball"
+    "KeepAlive": true,
+    "ShowStatusbar": true,
+    "RunsInBackground": true,
+    "Orientations": "Portrait",
+    "UriScheme": "fusefoosball"
   },
-  "RootNamespace": "",
   "Packages": [
     "Fuse",
     "FuseJS",
-    "Fuse.Launcher"
+    "Fuse.Launcher",
+    "Fuse.LocalNotifications"
   ],
   "Includes": [
     "*"

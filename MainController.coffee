@@ -1,20 +1,15 @@
 Observable = require('FuseJS/Observable')
 InterApp = require("FuseJS/InterApp")
-Auth = require("Auth")
-#Auth.clientID
-#Auth.clientSecret
+
+InterApp.onReceivedUri = (uri) =>
+  console.log(uri.replace('fusefoosball://user/login?cookies_base64=', ''))
 
 class App
   constructor: ->
     console.log('App building...', new Date().toString())
 
-  loginClicked: ->
-    console.log(JSON.stringify(arguments))
-    @startAuth()
-
-  startAuth: ->
-#    url = "https://github.com/login/oauth/authorize?client_id="
-#    url = url + clientID + "&scope=repo" + "&redirect_uri=fusegithub://fusegithub/code"
-    InterApp.launchUri("google.com")
+  loginClicked: =>
+    url = "http://foos.ipepe.pl/users/auth/google_oauth2?origin=fusefoosball://user/login"
+    InterApp.launchUri(url)
 
 module.exports = new App()
